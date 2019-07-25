@@ -1,0 +1,29 @@
+button {
+  &.btn {
+    color: white;
+    border-radius: $btn-radius;
+    min-width: 200px;
+    padding: 0.7rem 1rem;
+
+    &.btn-orange {
+      color: white;
+      background: linear-gradient(90deg, #ed632b 0%, #f3a953 100%);
+      margin-right: $gutter-l;
+    }
+    &.btn-plain {
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    &.btn {
+      &.btn-orange {
+        margin-right: 0;
+        margin-bottom: $gutter-l;
+      }
+    }
+  }
+}

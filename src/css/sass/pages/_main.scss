@@ -1,9 +1,13 @@
 .landing-page {
-  padding-top: 123px;
+  padding-top: 107px;
   height: 100vh;
 
   &--body {
     padding: 0 5rem;
+
+    img {
+      object-fit: scale-down;
+    }
 
     .main-text {
       color: white;
@@ -17,23 +21,71 @@
         font-size: ($font-xl - 6);
         margin-bottom: $gutter-xxl;
       }
+    }
+  }
+}
 
-      .igem-btn-group {
-        button {
-          color: white;
-          min-width: 200px;
-          padding: 0.7rem 1rem;
-          border-radius: $btn-radius;
+.article-section {
+  padding: 0 240px;
 
-          &.btn-orange {
-            background: linear-gradient(90deg, #ed632b 0%, #f3a953 100%);
-            margin-right: $gutter-l;
-          }
-          &.btn-plain {
-            border: 1px solid white;
-          }
+  article {
+    background: white;
+    box-shadow: 0px 0px 16px rgba(19, 65, 154, 0.1);
+    border-radius: $card-radius;
+    padding: 2rem;
+    margin-bottom: $gutter-xxl;
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  .article-btn {
+    margin-top: $gutter-xxl;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing-page {
+    padding-top: 66px;
+
+    &--body {
+      padding: 0;
+      flex-direction: column-reverse;
+      margin-bottom: 2rem;
+
+      img {
+        width: 300px;
+        height: 200px;
+        margin-bottom: $gutter-l;
+      }
+
+      .main-text {
+        align-items: center !important;
+
+        h1 {
+          text-align: center;
+          font-size: $font-xl;
+        }
+
+        p {
+          text-align: center;
+          font-size: $font-l;
+        }
+
+        .igem-btn-group {
+          flex-direction: column;
         }
       }
+    }
+  }
+
+  .article-section {
+    padding: 0 1.5rem;
+
+    article {
+      padding: 2rem;
+      margin-bottom: $gutter-xxl;
     }
   }
 }

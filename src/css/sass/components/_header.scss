@@ -37,7 +37,7 @@
 }
 
 .navbar {
-  padding: $gutter-xl ($gutter-xxl + $gutter-m);
+  padding: ($gutter-xl - $gutter-m) ($gutter-xxl + $gutter-m);
 
   .dropdown {
     .dropdown-toggle {
@@ -80,7 +80,7 @@
 @media screen and (max-width: 768px) {
   .navbar {
     padding: $gutter-m ($gutter-xl - 12px);
-    background-color: $primary-blue;
+    background-color: $medium-blue;
 
     .navbar-brand {
       img {
