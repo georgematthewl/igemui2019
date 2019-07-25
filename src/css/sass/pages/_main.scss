@@ -1,0 +1,39 @@
+.landing-page {
+  padding-top: 123px;
+  height: 100vh;
+
+  &--body {
+    padding: 0 5rem;
+
+    .main-text {
+      color: white;
+      h1 {
+        font-size: $font-xxxl;
+        font-family: "Secular One", sans-serif;
+        margin: 0;
+      }
+
+      p {
+        font-size: ($font-xl - 6);
+        margin-bottom: $gutter-xxl;
+      }
+
+      .igem-btn-group {
+        button {
+          color: white;
+          min-width: 200px;
+          padding: 0.7rem 1rem;
+          border-radius: $btn-radius;
+
+          &.btn-orange {
+            background: linear-gradient(90deg, #ed632b 0%, #f3a953 100%);
+            margin-right: $gutter-l;
+          }
+          &.btn-plain {
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+  }
+}

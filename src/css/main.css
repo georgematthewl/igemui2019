@@ -1,0 +1,104 @@
+/* Margin */
+/* Font */
+.navbar-dark .navbar-nav .nav-item:not(:last-child) {
+  margin-right: 8px;
+}
+.navbar-dark .navbar-nav .nav-item:hover > .dropdown-menu {
+  display: block;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff);
+  background-image: -moz-linear-gradient(#ffffff, #ffffff);
+  background-image: -o-linear-gradient(#ffffff, #ffffff);
+  background-image: linear-gradient(#ffffff, #ffffff);
+  background-size: 0 2px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  background-size: calc(100% - 16px) 2px;
+}
+
+.navbar {
+  padding: 32px 72px;
+}
+.navbar .dropdown .dropdown-toggle::after {
+  -webkit-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.2s;
+  -moz-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.2s;
+  -o-transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.2s;
+  transition: cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.2s;
+  transform: rotate(0deg);
+}
+.navbar .dropdown.show .dropdown-toggle::after {
+  transform: rotate(-180deg);
+}
+.navbar .dropdown .dropdown-menu {
+  background-color: #001062;
+  min-width: 100%;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item {
+  color: white;
+  transition: 0.3s;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item:hover {
+  color: black;
+}
+.navbar .dropdown:hover .dropdown-toggle::after {
+  transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 8px 20px;
+    background-color: #001062;
+  }
+  .navbar .navbar-brand img {
+    width: 120px;
+    height: 40px;
+  }
+}
+body {
+  background: url("../assets/helix-blue-bg.png");
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+}
+
+.landing-page {
+  padding-top: 123px;
+  height: 100vh;
+}
+.landing-page--body {
+  padding: 0 5rem;
+}
+.landing-page--body .main-text {
+  color: white;
+}
+.landing-page--body .main-text h1 {
+  font-size: 72px;
+  font-family: "Secular One", sans-serif;
+  margin: 0;
+}
+.landing-page--body .main-text p {
+  font-size: 26px;
+  margin-bottom: 64px;
+}
+.landing-page--body .main-text .igem-btn-group button {
+  color: white;
+  min-width: 200px;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+}
+.landing-page--body .main-text .igem-btn-group button.btn-orange {
+  background: linear-gradient(90deg, #ed632b 0%, #f3a953 100%);
+  margin-right: 16px;
+}
+.landing-page--body .main-text .igem-btn-group button.btn-plain {
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=main.css.map */
