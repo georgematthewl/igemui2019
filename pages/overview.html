@@ -19,7 +19,7 @@
     <script src="../src/js/index.js"></script>
 </head>
 
-<body id="main-page">
+<body>
     <header>
         <nav id="nav" class="navbar navbar-expand-lg justify-content-between navbar-dark fixed-top">
             <a class="navbar-brand" href="main.html"><img src="../src/assets/logo.png"></a>
@@ -91,21 +91,9 @@
             </div>
         </nav>
     </header>
-    <section class="container-fluid d-flex justify-content-center align-items-center flex-column landing-page">
-        <div class="row d-flex align-items-center landing-page--body">
-            <div
-                class="col-md-6 col-sm-12 col-lg-6 d-flex align-items-start justify-content-center flex-column main-text">
-                <h1>Finding Diphty</h1>
-                <p>iGEM 2019 - University of<br>
-                    Indonesia.</p>
-                <div class="d-flex igem-btn-group justify-content-between align-items-center">
-                    <button type="button" class="btn btn-orange">OUR PROJECT</button>
-                    <button type="button" class="btn btn-plain">MEET OUR TEAM</button>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-lg-6 d-flex align-items-center justify-content-center">
-                <img src="../src/assets/microscope.png">
-            </div>
+    <section class="container-fluid d-flex justify-content-center align-items-center flex-column content-page">
+        <div class="molecular-title">
+            <h1>OVERVIEW</h1>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -115,26 +103,45 @@
     </section>
     <section class="container-fluid d-flex justify-content-center align-items-center flex-column article-section">
         <article>
-            <p><b>Diphtheria</b> is an infection caused by pathogenic bacterium Corynebacterium diphtheriae. The hallmark of
+            <p>Diphtheria is an infection caused by pathogenic bacterium Corynebacterium diphtheriae. The hallmark of
                 diphtheria infection is pseudomembrane formation in posterior pharynx, potentially leading to
                 respiratory
                 tract obstruction and death. In addition, the bacterium produces toxin that enters cell via interaction
                 with
                 heparin-binding EGF-like growth factor (HB-EGF) receptor and inhibits protein synthesis, resulting in
                 lethal
-                complications such as myocarditis, bleeding problem, kidney and liver necrosis.
-            </p>
+                complications such as myocarditis, bleeding problem, kidney and liver necrosis.</p>
 
-            <p>Despite being preventable and curable, incidence and mortality rate caused by diphtheria are still
-                increasing, especially in developing countries including Indonesia. Recently, there has been diphtheria
-                outbreak affecting major provinces in Indonesia, mainly in unvaccinated children and adults. Therefore,
-                there are two issues to be highlighted: (1) lack of early detection and prompt treatment of diphtheria
-                infection and (2) lack of awareness regarding diphtheria and vaccination among Indonesian people.
-            </p>
+            <h5><b>Pathogenesis of Diphtheria: How Does Corynebacterium Diphtheriae Cause the Disease?</b></h5>
+            <p>Corynebacterium diphtheriae is a Gram-positive rod bacterium that causes diphtheria. It produces
+                exotoxin with two fragments (AB toxin). Fragment B facilitates toxin internalization within host cell
+                via endocytosis upon binding HB-EGF receptor,while fragment A catalyzes modification of ribosomal
+                elongation factor-2; therefore, it suppresses protein synthesis.</p>
 
-            <div class="d-flex justify-content-center align-items-center article-btn">
-                <a href="overview.html"><button type="button" class="btn btn-orange">SEE MORE</button></a>
-            </div>
+            <h5><b>Tar-mediated Chemotaxis System in Escherichia coli</b></h5>
+            <p>In E. coli, chemotaxis mediated by methyl-accepting chemotaxis proteins (MCPs) has been widely studied.
+                MCPs are transmembrane chemoreceptors with periplasmic ligand binding domain and cytoplasmic signaling
+                domain. To date, four different E. coli MCPs have been identified: Tar, Tsr, Trg and Tap chemoreceptors.
+                Tar chemoreceptor mediates E. coli movement towards aspartate and maltose (attractant molecules). It
+                undergoes conformational change upon attractant molecule binding, leading to inhibition of CheA protein
+                autophosphorylation and subsequent CheY activity. This causes the flagellum facilitates the bacterium to
+                swin towards attractant substance via opposite motor protein FliM rotation. On the other hand, CheA
+                autophosphorylation would cause prominent rotation of motor protein to make tumbling effect.</p>
+
+            <h5><b>LuxAB-eYFP Fluorescence Resonance Energy Transfer (FRET) System</b></h5>
+            <p>Basically, a molecule is excited to higher energy state when it absorbs a photon energy. This molecule
+                relaxes back to ground state when the energy is emitted back to the environment or transferred into
+                another molecule. FRET is a phenomenon in which non-radioactive energy is transferred from excited donor
+                molecule to acceptor molecule via dipole-dipole interactions. Molecules involved in this phenomenon are
+                called fluorophores as they emit fluorescence according to their respective emission spectrum after
+                absorbing higher photon energy. LuxAB and eYFP are one of the most widely studied paired fluorophores.
+                In this case, LuxAB is the donor fluorophore as it emits cyan colored light with relatively high energy
+                (peak emission at 490 nm). eYFP serves as the acceptor fluorophore when in close contact with LuxAB, as
+                it absorbs high energy from LuxAB that is overlapped with its own absorption spectrum and emits yellow
+                colored light with lower energy (peak emission at 530 nm). To be utilized in macromolecules interaction
+                studies, LuxAB and eYFP should be incorporated with the molecules of interest. When the molecules of
+                interest are in contact, energy transfer between LuxAB and eYFP will happen and its efficiency can be
+                measured with fluorescence-lifetime imaging microscopy method.</p>
         </article>
     </section>
 </body>

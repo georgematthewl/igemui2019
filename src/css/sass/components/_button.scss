@@ -4,6 +4,7 @@ button {
     border-radius: $btn-radius;
     min-width: 200px;
     padding: 0.7rem 1rem;
+    transition: 0.3s;
 
     &.btn-orange {
       color: white;
@@ -12,6 +13,10 @@ button {
     }
     &.btn-plain {
       color: white;
+      border: 1px solid white;
+    }
+    &:hover {
+      background: $orange-3;
       border: 1px solid white;
     }
   }

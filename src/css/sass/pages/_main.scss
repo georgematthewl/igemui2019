@@ -5,10 +5,6 @@
   &--body {
     padding: 0 5rem;
 
-    img {
-      object-fit: scale-down;
-    }
-
     .main-text {
       color: white;
       h1 {
@@ -34,7 +30,7 @@
     border-radius: $card-radius;
     padding: 2rem;
     margin-bottom: $gutter-xxl;
-    max-width: 1000px;
+    max-width: 1200px;
 
     p {
       text-align: justify;
@@ -48,7 +44,7 @@
 
 @media screen and (max-width: 768px) {
   .landing-page {
-    padding-top: 66px;
+    padding-top: 72px;
 
     &--body {
       padding: 0;
@@ -78,15 +74,6 @@
           flex-direction: column;
         }
       }
-    }
-  }
-
-  .article-section {
-    padding: 0 1.5rem;
-
-    article {
-      padding: 2rem;
-      margin-bottom: $gutter-xxl;
     }
   }
 }

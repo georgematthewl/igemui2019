@@ -38,6 +38,25 @@
 
 .navbar {
   padding: ($gutter-xl - $gutter-m) ($gutter-xxl + $gutter-m);
+  transition: 0.3s all;
+
+  .navbar-brand {
+    img {
+      transition: 0.3s all;
+    }
+  }
+
+  &.bg-blue {
+    background: linear-gradient(90deg, #001062 7.56%, #2d73d2 100%);
+    padding: $gutter-s ($gutter-xxl + $gutter-m);
+
+    .navbar-brand {
+      img {
+        width: 120px;
+        height: 40px;
+      }
+    }
+  }
 
   .dropdown {
     .dropdown-toggle {
@@ -80,7 +99,7 @@
 @media screen and (max-width: 768px) {
   .navbar {
     padding: $gutter-m ($gutter-xl - 12px);
-    background-color: $medium-blue;
+    background: linear-gradient(90deg, #001062 7.56%, #2d73d2 100%);
 
     .navbar-brand {
       img {
