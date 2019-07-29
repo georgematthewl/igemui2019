@@ -54,7 +54,6 @@ body {
   }
 }
 
-
 .bounce {
   -webkit-animation: bounce 2s infinite;
   -moz-animation: bounce 2s infinite;
@@ -110,6 +109,27 @@ body {
   }
 }
 
+.arrow-up {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  padding: 15px;
+
+  i {
+    color: $medium-blue;
+    transition: 0.3s all;
+
+    &:hover {
+      color: $primary-blue;
+      text-decoration: none;
+      transform: translateY(-8px);
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .article-section {
     padding: 0 1.5rem;
@@ -117,6 +137,24 @@ body {
     article {
       padding: 2rem;
       margin-bottom: $gutter-xxl;
+    }
+  }
+
+  .content-page {
+    height: auto;
+    .molecular-title {
+      padding: ($gutter-xl + $gutter-l);
+      margin-bottom: 2rem;
+
+      h1 {
+        margin: 0;
+        padding: $gutter-xl $gutter-xxl;
+        font-size: $font-xl;
+      }
+    }
+
+    img {
+      margin-bottom: 2rem;
     }
   }
 }

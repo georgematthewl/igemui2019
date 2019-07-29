@@ -21,27 +21,6 @@
   }
 }
 
-.article-section {
-  padding: 0 240px;
-
-  article {
-    background: white;
-    box-shadow: 0px 0px 16px rgba(19, 65, 154, 0.1);
-    border-radius: $card-radius;
-    padding: 2rem;
-    margin-bottom: $gutter-xxl;
-    max-width: 1200px;
-
-    p {
-      text-align: justify;
-    }
-  }
-
-  .article-btn {
-    margin-top: $gutter-xxl;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .landing-page {
     padding-top: 72px;

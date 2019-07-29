@@ -96,10 +96,34 @@
   }
 }
 
+.header-progress {
+  position: fixed;
+  top: 0;
+  z-index: 1040;
+  width: 100%;
+
+  .progress-container {
+    width: 100%;
+    height: 3px;
+
+    .progress-bar {
+      height: 3px;
+      background: white;
+      width: 0;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     padding: $gutter-m ($gutter-xl - 12px);
     background: linear-gradient(90deg, #001062 7.56%, #2d73d2 100%);
+    width: 100vw;
+
+    &.bg-blue {
+      background: linear-gradient(90deg, #001062 7.56%, #2d73d2 100%);
+      padding: $gutter-m ($gutter-xl - 12px);
+    }
 
     .navbar-brand {
       img {
