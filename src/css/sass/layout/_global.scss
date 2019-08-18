@@ -188,6 +188,10 @@ body {
     }
   }
 
+  .full-content {
+    padding: 0 1.5rem;
+  }
+
   .content-page {
     height: auto;
 
@@ -201,6 +205,7 @@ body {
         font-size: $font-xl;
       }
     }
+
 
     img {
       margin-bottom: 2rem;
