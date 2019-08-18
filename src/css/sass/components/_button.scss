@@ -4,7 +4,7 @@ button {
     border-radius: $btn-radius;
     min-width: 200px;
     padding: 0.7rem 1rem;
-    transition: 0.3s;
+    @include transition(cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.2s);
 
     &.btn-orange {
       color: white;

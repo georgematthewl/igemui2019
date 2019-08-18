@@ -8,6 +8,12 @@ $(document).ready(function() {
     );
   });
 
+  $(".accordion").accordion({
+    collapsible: true,
+    active: false,
+    heightStyle: "content"
+  });
+
   function toggleArrowUp() {
     if (
       document.body.scrollTop > 600 ||

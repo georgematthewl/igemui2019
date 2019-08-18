@@ -1,9 +1,11 @@
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
-@import 'components/header';
-@import 'components/button';
+@import "base/animation";
 
-@import 'layout/global';
+@import "components/header";
+@import "components/button";
 
-@import 'pages/main';
+@import "layout/global";
+
+@import "pages/main";
