@@ -305,6 +305,12 @@ button.btn:hover {
     margin-bottom: 16px;
   }
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: url("../assets/blue-gradient-bg.png") no-repeat center;
   background-size: cover;
@@ -372,6 +378,18 @@ body#main-page {
 }
 .full-content .side-nav li {
   counter-increment: item;
+}
+.full-content .side-nav li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+  font-weight: 800;
+}
+.full-content .side-nav li a.active {
+  color: #457ce8;
+}
+.full-content .side-nav li a:hover {
+  color: #13419A;
 }
 .full-content .side-nav li:before {
   content: counter(item);

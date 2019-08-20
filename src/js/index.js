@@ -4,15 +4,33 @@ $(document).ready(function() {
       {
         scrollTop: $("#top-page").offset().top
       },
-      800
+      500
     );
   });
 
-  $(".accordion").accordion({
-    collapsible: true,
-    active: false,
-    heightStyle: "content"
+  $(".side-nav li a").click(function() {
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top - 64
+      },
+      500
+    );
   });
+
+  $(window)
+    .scroll(function() {
+      var scrollDistance = $(window).scrollTop();
+
+      $("article").each(function(i) {
+        if (($(this).position().top + 500) <= scrollDistance) {
+          $(".side-nav li a.active").removeClass("active");
+          $(".side-nav li a")
+            .eq(i)
+            .addClass("active");
+        }
+      });
+    })
+    .scroll();
 
   function toggleArrowUp() {
     if (
@@ -47,4 +65,12 @@ $(document).ready(function() {
     toggleArrowUp();
     updateProgressBar();
   });
+
+  if ($(".accordion").length > 0) {
+    $(".accordion").accordion({
+      collapsible: true,
+      active: false,
+      heightStyle: "content"
+    });
+  }
 });
